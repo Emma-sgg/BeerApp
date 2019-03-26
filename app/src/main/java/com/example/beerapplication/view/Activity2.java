@@ -47,12 +47,10 @@ public class Activity2 extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     List<Beer> beers = response.body();
                     showList(beers);
-
                 }
                 else{
                     textViewResult.setText("Code" + response.code());
                     return;
-
                 }
                 List<Beer> beers = response.body();
                 /*for (Beer beer : beers) {
